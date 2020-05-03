@@ -25,7 +25,7 @@ pipeline {
          }
          stage('Ensure Content') {
                steps {
-                    curl https://udacity-jenkins-bucket.s3.amazonaws.com/index.html
+                  sh  'curl https://udacity-jenkins-bucket.s3.amazonaws.com/index.html'
                }
          }
     }
